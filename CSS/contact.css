@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins.ttf"); 
+}
+@font-face {
+    font-family: "poppins-Medium";
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    font-size: 1em;
+    text-align: center;
+    padding: 2rem;
+    font-family: "poppins-Medium";
+
+}
+form{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 5px 6px 24px 12px #DCDCDC;
+    border-top: 0.5rem solid #0475ba;
+}
+input{
+    height: 4rem;
+    width: 33rem;
+    border: 0.1rem solid rgb(221, 221, 221);
+   
+    
+}
+form [placeholder] {
+    padding: 1rem;
+    font-family: "poppins";
+    border-radius: 0.3rem;
+}
+label{
+    font-family: "poppins-Medium";
+}
+textarea{
+    border: 0.1rem solid rgb(221, 221, 221);
+}
+
+ 
+ 
+ .name, .email, .topic, .message{
+     padding-bottom: 1rem;
+ }
+ input[type="submit"]{
+    background-color: #0475ba;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+
+}
+
+   
+
+

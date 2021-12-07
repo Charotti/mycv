@@ -1,0 +1,251 @@
+/*GENERAL*/
+@font-face {
+    font-family: "poppins";
+    src: url("./fonts/poppins.ttf"), 
+}
+@font-face {
+    font-family: "poppins-Medium";
+    src: url("./fonts/Poppins-Medium.ttf");
+}
+
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+ 
+}
+/* Taille et police par défaut en rem du document */
+/*1 rem = 10px*/
+html{
+    font-size: 62.5%;
+}
+
+
+
+body{
+    font-family: "poppins";
+    font-size: 1.6rem;
+}  
+
+/*HEADER*/
+header{
+    background-color:#0475ba;
+    
+    color: white;
+    display: flex;
+    align-items: center;
+   /* gap: 1rem; Le gap n'étant pas reconnu par tous les navigateurs , on utilise le header h2 avec un margin*/
+   
+}
+header h2{
+    margin-right: 3rem;
+    margin-left: 1rem;
+    /*pareil que 
+    margin:0 4rem;*/
+}
+.nav-links>a{  /*concerne les enfants directs d'une balise*/
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+   
+    
+}
+.section-content{
+    padding: 4rem;
+    max-width:  80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.name-job{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.name-job h1{
+    margin-bottom: 1rem;
+}
+.name-job h2{
+    color: #0475ba;
+}
+
+
+img{
+    
+    border-radius: 50%;
+   /* clip-path:ellipse(50% 50%);*/
+    width: 200px;
+    max-width: 100%;
+   
+}
+ul{
+    padding-top: 1.5rem;
+}
+
+#presentation{
+    padding: 2rem 20rem;
+    background-color:#0475ba;
+    color: white;
+    
+}
+ .container{ 
+    padding: 4rem;
+    max-width: 80rem;
+    margin:0 auto ;
+} 
+#experiences{
+    padding: 2rem 20rem;
+}
+#experiences ul li{
+    list-style-type: none;
+}
+.exp{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Formation */
+#formations{
+    padding: 2rem 20rem;
+    background-color:#0475ba;
+    color: white;
+}
+
+#passions{
+    padding: 2rem 20rem;
+}
+#passion h2 p{
+    padding-top: 1.5rem;
+}
+footer{
+     height: 9rem; 
+    background-color:#0475ba;
+    display: flex;
+    align-items: center;
+
+   
+}
+footer a{
+    color: white;
+        
+}
+/*footer test en deux colonnes*/
+
+
+#blogs{
+      
+        display: flex;
+        flex-direction: column;
+        padding-left: 3rem;
+}
+.networks{
+    
+        display: flex;
+        flex-direction: column;
+        padding-left: 15rem;
+       
+}
+.fab
+{
+    color: white;
+}
+
+
+/* @media screen and (max-width:900px){
+   body{
+       font-size: 1.2rem;
+       text-align: center;
+   }
+   
+    .section-content{
+    
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+   img{
+       width: 150px;
+      
+   }
+   .exp{
+       flex-direction: column-reverse;
+   }
+} */
+
+  
+/* @media screen and (min-width: 320px){
+   sélecteur ou class ou id{
+       propiété: valeur
+
+    }
+}
+*/
+ @media screen and (min-width: 768px) and (max-width: 1024px){
+
+    
+  #experiences, #formations, #passions, #presentation {
+      padding-left: 0rem;
+    
+  }
+} 
+@media screen and (min-width: 320px) and (max-width: 768px){
+    h2{
+        font-size:1em;
+        text-align: center;
+    }
+    .section-content{
+        flex-direction: column;
+       
+    }
+    
+    
+    .nav-links{
+        display: none;
+
+    }
+  
+    img{
+        
+        width: 150px;
+        margin: 2rem auto;  
+        
+    }
+    ul{
+        font-size: 0.8em;
+    }
+   .exp h3{
+        font-size: 0.8em;
+    }
+    #formations p, span{
+        font-size: 0.8em;
+    }
+   #passions p{
+       font-size: 0.8em;
+   }
+    
+     #experiences, #formations, #passions, #presentation{
+         padding: 0rem 0rem;
+         text-align: left;
+     }
+  footer{
+      padding-top: 1rem;
+      display: block;
+      flex-direction: row;
+     
+      
+      
+  }
+    
+     #blogs a{
+         font-size: 0.8em;
+        
+     }
+     .networks{
+    
+        font-size: 0.8em;
+        padding-left: 3rem;
+        padding-top: 1rem;
+    
+}
+    }
